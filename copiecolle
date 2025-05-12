@@ -1,0 +1,84 @@
+    ctx.fillText(text, textX, textY);
+    ctx.strokeText(text, textX, textY);
+
+    
+    const text = 'Hello World!';
+    const textX = canvas.width /2;
+    const textY = canvas.height /2;
+
+    
+
+
+
+
+
+
+
+
+
+    /*console.log(ctx);
+
+    ctx.lineWidth = 3;
+     
+    
+    const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+    gradient.addColorStop(0.3,'red');
+    gradient.addColorStop(0.5,'fuchsia');
+    gradient.addColorStop(0.7,'blue');
+    ctx.fillStyle = gradient;
+    ctx.strokeStyle = "blue";
+    ctx.font = "80px Helvetica";
+
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+
+    const maxTextWidth = canvas.width * 0.5;
+    const lineHeight = 80;
+
+
+    
+    function WrappedText(text)
+    {
+        let linesArray = [];
+        let lineCounter = 0;
+        let line = '';
+        let words = text.split(' ');
+        for(let i = 0; i < words.length; i++)
+        {
+            let testLine = line + words[i] + ' ';
+             if(ctx.measureText(testLine).width > maxTextWidth)
+             {
+                line = words[i] + ' ';
+                lineCounter++;
+
+             }
+             else
+                {
+                    line = testLine;
+                }
+                linesArray[lineCounter] = line; 
+             ////
+        }  
+
+        let textHeight = lineHeight * lineCounter;
+        let textY = canvas.height/2 - textHeight / 2;
+
+        linesArray.forEach((el, index) =>
+        {
+            ctx.fillText(el, canvas.width/2, canvas.height/2 + index * lineHeight - textHeight / 2);
+        })
+
+        
+
+        console.log(linesArray);
+    }
+
+    //WrappedText('Hello how are you today baa baaa');//
+
+
+    */
+
+    this.context.lineWidth = 2;
+    this.context.strokeStyle = "white";
+
+    this.context.strokeText(el, this.textX, this.textY + (index * this.lineHeight));
